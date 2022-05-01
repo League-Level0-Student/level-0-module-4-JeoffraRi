@@ -22,7 +22,7 @@ int dimesInt = Integer.parseInt(dimes);
 String quarters = JOptionPane.showInputDialog(null, "Input number of quarters here."); 
 int quartersInt = Integer.parseInt(quarters);
 		// Calculate how much money the user has.  Hint: Use a double variable 
-		double monkey = (nickelsInt*0.05)+(dimesInt*0.10)+(quartersInt*25);
+		double monkey = (nickelsInt*0.05)+(dimesInt*0.10)+(quartersInt*0.25);
 JOptionPane.showMessageDialog(null, "Okay, so this is how much monkey you have:");
 JOptionPane.showMessageDialog(null, "<html>Oh wait, I mean this is how much <i>money</i> you have:<html>");
 JOptionPane.showMessageDialog(null, "$"+monkey+"");
@@ -30,17 +30,44 @@ if (quartersInt>4) {
 	JOptionPane.showMessageDialog(null, "Wow! That's enough to buy "+quartersInt+" No. 2 pencils!");
 }else if (quartersInt==4) {
 	JOptionPane.showMessageDialog(null, "Wow! That's enough to buy a No. 2 pencil!");
-}else if (quartersInt<4) {
+}else if (monkey<1.00) {
 	JOptionPane.showMessageDialog(null, "Aw man, you can't buy anything. Well, you'll get money in the future!");
 }
-		/*
-		 *  weeeeee!!! kablourwdnksmaldbhwjna. No! Not dwiqjnksxneiwjk!
-		 *  I surrrreee lovvveee monkeys! 
-		 */
-		JOptionPane.showMessageDialog(null, "💩");
-		
-		// Tell the user how much money they have in dollars and cents format (e.g. $6.75)
-
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
