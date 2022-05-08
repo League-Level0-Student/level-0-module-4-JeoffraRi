@@ -52,6 +52,7 @@ public class GooglyEyes extends PApplet {
     }
     
     @Override
+    
     public void setup() {
     	 image(face, 0, 0);
     }
