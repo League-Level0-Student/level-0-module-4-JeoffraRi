@@ -13,15 +13,19 @@ public class FruitQuiz extends KeyAdapter {
 	void makeQuestions() {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
 		// 11. Make another question called "question2".  Use question1 above as a guide.
+		question2 = new JLabel("<html>What is fake? <br> A: Chayote <br> B: Apple <br> C: Keithfruit</html>");
 	}
 
 	@Override
 	public void keyPressed(KeyEvent arg0) {
 		int keyCode = arg0.getKeyCode();
 		// 1. Print out the key code variable
+		System.out.println(keyCode);
 
 		// 2. Make 3 int variables that hold the key codes for A, b, and C
-		
+		int key1 = 65;
+		int key2 = 66;
+		int key3 = 67;
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
 		
 		// 12. If question2 is showing,
@@ -31,8 +35,35 @@ public class FruitQuiz extends KeyAdapter {
 			
 		if (question1.isShowing()) {
 			// 3. If they selected the right fruit, do steps 4 and 7
-			
-				// 4. Call the correct() method
+			if (keyCode==key3) {
+				correct();
+				System.out.println("Right!");
+				nextQuestion(question2);
+			}
+			if (keyCode==key2) {
+				incorrect();
+				System.out.println("Wrong!");
+			}
+			if (keyCode==key1) {
+				System.out.println("Wrong!");
+				incorrect();
+			}
+		}
+			if (question2.isShowing()) {
+				if (keyCode==key3) {
+					correct();
+					System.out.println("Right!");
+				}
+				if (keyCode==key2) {
+					incorrect();
+					System.out.println("Wrong!");
+				}
+				if (keyCode==key1) {
+					System.out.println("Wrong!");
+					incorrect();
+			}
+			}
+				// 4. Call the correct() methodyfcc
 				
 				// 7. Use the nextQuestion() method to go to question2
 			
@@ -43,19 +74,20 @@ public class FruitQuiz extends KeyAdapter {
 		
 		}
 
-	}
+	
 
 	private void correct() {
 		// 5. Find a sound for when they get a question right, and drag it into
 		// the 'extra' package. It must be a .wav file. 
 		// There are lots on freesound.org
 		// 6. Use the playSound method to play your sound
-
+		playSound("homer-woohoo.wav");
 
 	}
 
 	private void incorrect() {
 		// 10. Find a sound for wrong answers and put it in the default package. Use the playSound method to play it.
+playSound("homer-doh.wav");
 
 	}
 
