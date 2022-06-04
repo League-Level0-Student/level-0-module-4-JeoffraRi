@@ -1,14 +1,30 @@
 package _99_extra;
 
+import java.util.Random;
+
+import javax.swing.JOptionPane;
 
 public class StringMethods2 {
+	
+	
 	public static void main(String[] args) {
-		
+		Random randoMan = new Random();
 		// 1. Create a String variable and initialize it with
 		//    random upper and lower case characters.
-
-		// 2. Print your String to the console in upper case.
+		String AtoZ = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String  randCase = "";
 		
+		for (int i=0;i<10;i++) {
+			int nameOfYourOwn = randoMan.nextInt();
+			System.out.println(nameOfYourOwn);
+			
+			String RowansNose = AtoZ.charAt(nameOfYourOwn) + "";
+			randCase = RowansNose+randCase;	
+			
+		}
+		
+		// 2. Print your String to the console in upper case.
+		System.out.println(randCase);
 		// 3. Print your String to the console in lower case.
 
 		// 4. Print the first 3 char's of your String
