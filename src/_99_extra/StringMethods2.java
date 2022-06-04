@@ -15,7 +15,7 @@ public class StringMethods2 {
 		String  randCase = "";
 		
 		for (int i=0;i<10;i++) {
-			int nameOfYourOwn = randoMan.nextInt();
+			int nameOfYourOwn = randoMan.nextint
 			System.out.println(nameOfYourOwn);
 			
 			String RowansNose = AtoZ.charAt(nameOfYourOwn) + "";
