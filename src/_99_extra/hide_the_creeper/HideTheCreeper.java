@@ -1,6 +1,7 @@
 package _99_extra.hide_the_creeper;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 
 public class HideTheCreeper extends PApplet {
     static final int WIDTH = 600;
@@ -13,12 +14,13 @@ public class HideTheCreeper extends PApplet {
 
     @Override
     public void setup() {
-        
+    	PImage image = loadImage("creeper.png");  
+        background(image);
     }
 
     @Override
     public void draw() {
-        
+      
     }
 
     static public void main(String[] args) {
