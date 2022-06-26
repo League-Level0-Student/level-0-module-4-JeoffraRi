@@ -19,7 +19,7 @@ public class PinTheTail extends PApplet {
 
     @Override
     public void setup() {
-        
+        //asher is kool
     }
 
     @Override
