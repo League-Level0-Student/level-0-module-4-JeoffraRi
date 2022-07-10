@@ -6,7 +6,11 @@ import processing.core.PApplet;
 import processing.core.PImage;
 
 public class Pong extends PApplet {
-	
+	/*Half-done
+	1:55 PM
+	Jul 10 2022
+	:smile:
+	*/
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
     int xSpeed = 7;
